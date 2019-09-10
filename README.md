@@ -47,17 +47,35 @@
 
 ## Exploratory Analysis
 
-1. Do people prefer sweeter foods during colder seasons?
+1. _Do people prefer high-energy foods during colder seasons?_
     + ![nutrients-energy](./figures/nutrients-energy.png)
-2. Sugar brings happiness!? Does this reflect on product rating?
-    + ![sugar](./figures/sugar.png)
-3. What are the non-verified purchases? Any special attribute of it?
-4. Is there a group of healthy-conscious consumer?
-
-+ Food Groups with Unsupervised learning
-  + [UMAP](https://github.com/lmcinnes/umap)
-+ 
+    + Jan. and Feb. boxplots are slightly higher
+2. _Sugar brings happiness!? Does this reflect on product rating?_
+    <!-- + ![sugar](./figures/sugar.png) -->
+    + No observable difference.
+3. _What are the non-verified purchases? Any special attribute of it?_
+4. _Is there a group of healthy-conscious consumer?_
+    + A small group of consumers only buy products with fiber around 80g
+5. _Users who buys once vs. who buys multiple_
+    + the majority only buys once, with 22% buys more than once
+      + ![buy-times](./figures/buy-times.png)
+    + But ratings by the two groups doesn't show difference
+    + Yet sugar contents shows some difference
+      + ![buy-times](./figures/buy-times-nutrients.png)
+    + **So what makes a buyer buy once vs. more??**
+6. _Word difference between the two groups of buys once vs. buys multiple_
+    + Word Cloud with buy once
+      + ![buy-once](./figures/wcloud_once.png)
+    + Word Cloud with buy more than once
+      + ![buy-more](./figures/wcloud_more.png)
 
 ## Modelling
 
-+ 
+
+
+
+
+<!-- instead of sentiment evaluation, evaluate if buy another product next time? -->
+<!-- + Food Groups with Unsupervised learning
+  + [UMAP](https://github.com/lmcinnes/umap)
++ 2nd purchasing customers, what they think and consume -->
