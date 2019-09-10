@@ -9,24 +9,22 @@
 
 ## Dataset
 
-### Open Food Facts
+### Open Food Facts (OFF)
 
 + Summary:
   + Public dataset collected by volunteers on Food Facts
-  + i.e. information on product packages
-  + With 175 attributes, most have high NA counts except main nutrients
-  + 950 thousand entries
+    + i.e. information on product packages
+  + With 175 attributes and 950 thousand entries
 + Attributes:
   + [Full list of attributes](https://static.openfoodfacts.org/data/data-fields.txt)
 + Resources:
   + [Open Food Facts](https://world.openfoodfacts.org/)
   + [Open Food Facts data](https://world.openfoodfacts.org/data)
 
-### Amazon Reviews: Grocery
+### Amazon Reviews: Grocery (AMZ)
 
 + Summary:
-  + Amazon Customer Reviews, on grocery category
-  + From year 2000 to 2015
+  + Amazon Customer Reviews, on grocery; from year 2000 to 2015
   + Including comments and ratings on each product by each customer
   + 2.4 million entries
 + Attributes:
@@ -39,17 +37,26 @@
 ### Merged data
 
 + Merge both dataset by Product Name/Title
-  + tokenize and normalize the names/titles
-  + remove duplications
-  + merge food facts with each customer reviews
+  1. tokenize and normalize the names/titles
+      + `re` to remove non-title strings and find tokens
+      + tokens are sorted and lowercased
+  2. remove duplications
+      + OFF: same product and same size
+      + OFF: same product but diff size
+  3. merge food facts with each customer reviews
 
 ## Exploratory Analysis
 
-+ What is the change in energy consumption by each month?
-  + ![nutrients-energy](./figures/nutrients-energy.png)
-+ Does higher sugar content equal to higher product rating?
-  + ![sugar](./figures/sugar.png)
-+ ...
+1. Do people prefer sweeter foods during colder seasons?
+    + ![nutrients-energy](./figures/nutrients-energy.png)
+2. Sugar brings happiness!? Does this reflect on product rating?
+    + ![sugar](./figures/sugar.png)
+3. What are the non-verified purchases? Any special attribute of it?
+4. Is there a group of healthy-conscious consumer?
+
++ Food Groups with Unsupervised learning
+  + [UMAP](https://github.com/lmcinnes/umap)
++ 
 
 ## Modelling
 
