@@ -47,6 +47,8 @@
 
 ## Exploratory Analysis
 
+### Explorations
+
 1. _Do people prefer high-energy foods during colder seasons?_
     + ![nutrients-energy](./figures/nutrients-energy.png)
     + Jan. and Feb. boxplots are slightly higher
@@ -60,20 +62,38 @@
     + the majority only buys once, with 22% buys more than once
       + ![buy-times](./figures/buy-times.png)
     + But ratings by the two groups doesn't show difference
-    + Yet sugar contents shows some difference
       + ![buy-times](./figures/buy-times-nutrients.png)
+    + Of all the nutrients, only sugar shows some difference  
     + **So what makes a buyer buy once vs. more??**
-6. _Word difference between the two groups of buys once vs. buys multiple_
+6. _Word difference on reviews between the two groups: buys once vs. buys multiple_
     + Word Cloud with buy once
       + ![buy-once](./figures/wcloud_once.png)
     + Word Cloud with buy more than once
       + ![buy-more](./figures/wcloud_more.png)
 
+### Interactive Explorations
+
+1. Food Explorations, i.e. by each food
+    + relations beween two nutrients, interactive
+      + select to compare two
+2. Customer Explorations, i.e. by each customer
+    + 
+
 ## Modelling
 
 
+## References
 
++ [5 Data Science Projects](https://www.dataoptimal.com/data-science-projects-2018/)
 
+<!-- ideas -->
+<!-- using bokeh for interactive visualization -->
+
+<!-- Data Cleaning
+Exploratory Data Analysis
+Interactive Data Visualizations
+Machine Learning
+Communication -->
 
 <!-- instead of sentiment evaluation, evaluate if buy another product next time? -->
 <!-- + Food Groups with Unsupervised learning
